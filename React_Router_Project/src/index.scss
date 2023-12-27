@@ -1,0 +1,8 @@
+@use "../src/assets/styles/base";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "../src/assets/styles/NavbarLinks.scss";
+@import "../src/assets/styles/Hamburger.scss";

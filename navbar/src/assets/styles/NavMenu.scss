@@ -1,0 +1,39 @@
+.link-item {
+  position: relative;
+  padding: 0.2em 1.2em 0.4em 1.2em;
+  border-radius: 0.8rem 0.8rem 0 0;
+  transition: all 0.4s;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 3rem;
+    background: #853333;
+    border-radius: 0.8rem 0.8rem 0 0;
+    background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+    transform-origin: bottom;
+    transform: scaleY(0.05);
+    transition: all 0.4s;
+    @apply dark:bg-[#fff] dark:bg-gradient-to-r from-neutral-50 to-slate-400;
+  }
+
+  &.active {
+    color: #fff;
+    @apply dark:text-black;
+  }
+  &.active::before {
+    transform: scaleY(1);
+  }
+
+  &:hover::before {
+    transform: scaleY(1);
+  }
+}
+
+.nav-menu.responsive{
+  right: 0 !important;
+}

@@ -1,0 +1,13 @@
+@media (max-width: 1024px) {
+  .nav-menu {
+    @apply flex-col justify-center w-[100%] -right-[100%] top-0 fixed h-[100dvh] z-[2] bg-gray-300 transition-all;
+
+    & .link-item {
+      @apply dark:text-black text-2xl font-bold;
+    }
+
+    &.responsive {
+      right: 0 !important;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.hamburger {
+  & .ham0,
+  .ham1 {
+    transition: transform 0.3s ease;
+    transform-origin: 77%;
+  }
+  &.open .ham0,
+  &.open .ham1 {
+    @apply dark:border-black;
+  }
+  &.open .ham0 {
+    transform: rotate(-45deg);
+  }
+  &.open .ham1 {
+    transform: rotate(45deg);
+  }
+}

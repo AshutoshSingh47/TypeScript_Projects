@@ -1,0 +1,19 @@
+.hamburger {
+  & .ham0,
+  .ham1 {
+    transition: all 0.3s ease;
+    transform-origin: 55%;
+  }
+  & .ham0 {
+    transform: translateY(3.5px);
+  }
+  & .ham1 {
+    transform: translateY(-3.5px);
+  }
+  &.open .ham0 {
+    transform: rotate(-45deg);
+  }
+  &.open .ham1 {
+    transform: rotate(45deg);
+  }
+}
