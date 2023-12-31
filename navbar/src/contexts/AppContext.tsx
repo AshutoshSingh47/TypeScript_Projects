@@ -39,7 +39,6 @@ type themeMode = {
 type navId = {
     index: number,
     setIndex: React.Dispatch<React.SetStateAction<number>>
-
 }
 
 type wrapperObject = {
@@ -54,7 +53,7 @@ export const AppContext = createContext<AppContext | undefined>(undefined);
 export const AppProvider: React.FC<AppProviderProps> = ({ children }): React.JSX.Element => {
 
     //Variable navitems storing array of objects.
-    const navitems: NavLinks[] = [{ id: 1, name: "Home", link: "" }, { id: 2, name: "About", link: "about" }, { id: 3, name: "Contact", link: "contact" }, { id: 4, name: "Help", link: "help" }];
+    const navitems: NavLinks[] = [{ id: 1, name: "Home", link: "" }, { id: 2, name: "Market", link: "market" }, { id: 3, name: "About", link: "about" }, { id: 4, name: "Join", link: "join" }];
 
     /* Sets the default theme mode
     

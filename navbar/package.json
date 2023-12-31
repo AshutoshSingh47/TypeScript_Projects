@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "framer-motion": "^10.16.16",
+    "gsap": "^3.12.4",
     "postcss-nested": "^6.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

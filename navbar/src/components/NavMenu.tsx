@@ -86,9 +86,7 @@ const NavMenu: React.FC = (): React.JSX.Element => {
             <ul className="max-lg:hidden nav-menu flex list-none flex-row gap-6 items-center text-lg cursor-pointer">
                 {
                     navitems.map((value: NavLinks) => (
-                        <li key={value.id} data-id={value.id} className="link-item text-black dark:text-white hover:text-white dark:hover:text-black">
-                            <Link to={value.link}>{value.name}</Link>
-                        </li>
+                        <Link key={value.id} data-id={value.id} className="link-item text-black dark:text-white hover:text-white dark:hover:text-black" to={value.link}>{value.name}</Link>
                     ))
                 }
             </ul>

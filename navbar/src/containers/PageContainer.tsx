@@ -1,15 +1,15 @@
 import React, { ReactNode } from "react";
 
 type PageContainerProps = {
-    children:ReactNode;
+    children: ReactNode;
 }
 
 
-const PageContainer:React.FC<PageContainerProps> = ({children}):React.JSX.Element => {
+const PageContainer: React.FC<PageContainerProps> = ({ children }): React.JSX.Element => {
 
     return (
-        <div className="hero absolute top-24 left-0 right-0 w-[100%] dark:bg-[#282c34] p-4 text-white bg-white border dark:border-white h-[100dvh]">
-        {children}
+        <div className="hero absolute top-24 left-0 right-0 w-[100%]  text-white px-10 py-4 h-[87dvh] flex flex-col justify-center">
+            {children}
         </div>
     );
 }

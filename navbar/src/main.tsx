@@ -5,8 +5,8 @@ import App from './App.tsx';
 import Error_Page from './errors/Error_Page.tsx';
 import Home from './pages/Home.tsx';
 import About from './pages/About.tsx';
-import Contact from './pages/Contact.tsx';
-import Help from './pages/Help.tsx';
+import Market from './pages/Market.tsx';
+import Join from './pages/Join.tsx';
 
 import { RouterProvider, createBrowserRouter, createRoutesFromElements, Route } from 'react-router-dom';
 
@@ -15,9 +15,9 @@ import "./index.scss";
 const router = createBrowserRouter(createRoutesFromElements(
     <Route path='/' element={<App />} errorElement={<Error_Page />}>
       <Route path='' element={<Home />} />
+      <Route path='market' element={<Market />} />
       <Route path='about' element={<About />} />
-      <Route path='contact' element={<Contact />} />
-      <Route path='help' element={<Help />} />
+      <Route path='join' element={<Join />} />
     </Route>
 ));
 

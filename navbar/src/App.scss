@@ -3,5 +3,5 @@
 }
 
 body {
-  @apply dark:bg-[#282c34] font-montserrat scroll-smooth;
+  @apply bg-[#fff] bg-gradient-to-r from-neutral-50 to-slate-400 dark:bg-[#3e396a] dark:bg-gradient-to-r dark:from-[#3e396a] dark:to-[#d240c7] font-montserrat scroll-smooth;
 }
