@@ -1,4 +1,4 @@
-import { useState, useEffect, useContext } from "react";
+import { useState, useEffect } from "react";
 import gsap from "gsap";
 import { useLocation } from "react-router-dom";
 
