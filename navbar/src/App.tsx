@@ -5,7 +5,7 @@ import NavMenu from './components/NavMenu';
 import ThemeMode from './components/ThemeMode';
 import Hamburger from './components/Hamburger';
 import NavMenuResponsive from './components/NavMenuResponsive';
-import CustomCursor from './components/customCursor.tsx';
+import CustomCursor from './components/CustomCursor.tsx';
 import PageContainer from './containers/PageContainer';
 import "./App.scss";
 import { Outlet } from 'react-router-dom';
@@ -43,9 +43,8 @@ const App: React.FC = (): React.JSX.Element => {
 
         <PageContainer>
           <Outlet />
-          <CustomCursor/>
         </PageContainer>
-        
+        <CustomCursor />
       </AppProvider>
     </>
   );

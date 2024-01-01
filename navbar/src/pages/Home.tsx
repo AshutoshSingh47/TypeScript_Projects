@@ -3,7 +3,6 @@ import Crypto from "../assets/images/Crypto.png";
 import React from "react";
 
 const Home: React.FC = (): React.JSX.Element => {
-
     return (
         <>
             <div className="custom-shape-divider-bottom-1703863472">

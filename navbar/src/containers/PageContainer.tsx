@@ -4,7 +4,6 @@ type PageContainerProps = {
     children: ReactNode;
 }
 
-
 const PageContainer: React.FC<PageContainerProps> = ({ children }): React.JSX.Element => {
 
     return (

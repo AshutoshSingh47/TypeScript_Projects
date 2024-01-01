@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import gsap from "gsap";
+import { useLocation } from "react-router-dom";
 
 type MousePosition = {
     x: number,
@@ -12,6 +13,8 @@ const CustomCursor: React.FC = (): React.JSX.Element => {
         x: 0,
         y: 0
     });
+
+    const location = useLocation();
 
     useEffect(() => {
         const mouseMove = (e: MouseEvent) => {
@@ -37,6 +40,7 @@ const CustomCursor: React.FC = (): React.JSX.Element => {
 
 
     useEffect(() => {
+
         const cursor: HTMLElement | null = document.getElementById("customCursor");
         const cursorScale: NodeListOf<Element> = document.querySelectorAll(".cursor-scale-heading");
 
@@ -50,10 +54,15 @@ const CustomCursor: React.FC = (): React.JSX.Element => {
                 cursor.classList.remove("grow");
             }
         }
-        cursorScale.forEach((item) => {
-            item.addEventListener("mousemove", scaleUp);
-            item.addEventListener("mouseleave", scaleDown);
-        });
+
+        const handleCustomCursor = (): void => {
+            cursorScale.forEach((item) => {
+                item.addEventListener("mousemove", scaleUp);
+                item.addEventListener("mouseleave", scaleDown);
+            });
+        }
+
+        handleCustomCursor();
 
         return () => {
             cursorScale.forEach((item) => {
@@ -62,7 +71,7 @@ const CustomCursor: React.FC = (): React.JSX.Element => {
             });
         }
 
-    }, []);
+    }, [location]);
 
     return (
         <div id="customCursor" className="pointer-events-none fixed left-0 top-0 w-12 h-12 border-[0.2rem] border-black rounded-[50%] bg-transparent"></div>
