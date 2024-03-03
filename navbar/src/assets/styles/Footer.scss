@@ -1,0 +1,11 @@
+.custom-shape-divider-bottom-1703863472 {
+    @apply absolute bottom-0 left-0 w-[100%] overflow-hidden leading-[0] rotate-180;
+  }
+  
+  .custom-shape-divider-bottom-1703863472 svg {
+    @apply relative block w-[calc(100%+1.3px)] h-[90px];
+  }
+  
+  .custom-shape-divider-bottom-1703863472 .shape-fill {
+    @apply dark:fill-[#ffffff] fill-[#282c34];
+  }

@@ -22,7 +22,7 @@ const ThemeMode: React.FC = (): React.JSX.Element => {
 
     return (
         <>
-            <div className="max-lg:hidden flex flex-row items-center cursor-pointer justify-center" onClick={() => handleTheme()}>
+            <div className="max-lg:hidden flex flex-row items-center cursor-pointer min-w-[2rem] justify-center" onClick={() => handleTheme()}>
                 {
                     isdark ? <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" data-slot="icon" className="w-8 h-8 text-white absolute">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
